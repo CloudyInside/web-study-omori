@@ -1,0 +1,326 @@
+*,
+* ::before,
+* ::after {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: Omori;
+	src: url(../src/OMORI_GAME2.ttf);
+}
+::-webkit-scrollbar {
+	width: 0px;
+}
+img {
+	image-rendering: crisp-edges;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	font-family: "Omori", "Segoe UI", system-ui, sans-serif;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overscroll-behavior: none;
+}
+main {
+	height: 100%;
+	width: 100%;
+	max-width: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	flex: 1 1 auto;
+}
+.header-container {
+	min-height: fit-content;
+	padding-top: 1.5rem;
+	display: flex;
+	margin-bottom: 0.25rem;
+}
+.header-logo {
+	margin-bottom: 1rem;
+}
+.header-gif {
+	width: 4.5rem;
+	position: relative;
+}
+.header-gif > img {
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+h2 {
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.3rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+	border-style: none;
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+}
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+	border-style: none;
+	display: flex;
+	flex-shrink: 0;
+	align-items: flex-start;
+	justify-content: left;
+}
+.nav-bar {
+	width: 100%;
+	max-width: 30rem;
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1.25em;
+	align-items: center;
+	justify-content: center;
+}
+.nav-bar__btn {
+	max-width: 4.5rem;
+	padding: 0.3em 0.125em;
+	position: relative;
+	flex: 0 0 calc(25% - 15px);
+	color: rgb(255 255 255 / 1);
+	background-color: rgb(0 0 0 / 1);
+	box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
+	font-family: "Omori";
+	font-size: 1.125em;
+	text-transform: uppercase;
+	cursor: url(../img/cursor.png), auto;
+	border-style: none;
+	top: 0px;
+	transition: top 0.5s;
+}
+.home-container {
+	height: 100%;
+	margin-bottom: 1rem;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: scroll;
+	scrollbar-width: none;
+}
+.video-wrapper {
+	display: flex;
+	min-height: 0px;
+}
+.video {
+	max-height: 270px;
+	width: 100%;
+	max-width: 480px;
+	object-fit: contain;
+}
+.content-container {
+	height: 100%;
+	width: 100%;
+	max-width: 30rem;
+	padding: 1rem;
+	position: relative;
+	display: none;
+	flex: 1 1 auto;
+	justify-content: flex-start;
+	background-color: rgb(0 0 0 / 1);
+	box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
+	overflow: hidden;
+}
+.content-container__item {
+	color: #fff;
+	font-size: 1.125rem;
+	width: 100%;
+	height: auto;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+.content-container__item a {
+	text-decoration: underline;
+	color: #fff;
+	cursor: url(../img/cursor.png), auto;
+}
+.content-container__item p {
+	margin-bottom: 0;
+}
+.content-container__item img {
+	width: 100%;
+	display: flex;
+	object-fit: cover;
+	box-shadow: 0 0 1px #000;
+	pointer-events: none;
+}
+.update-title {
+	display: inline-block;
+	overflow-wrap: break-word;
+	margin-top: 0.2rem;
+	font-weight: bolder;
+}
+.update-date {
+	float: right;
+	margin-top: 0.2rem;
+	font-weight: bolder;
+}
+.update-description {
+	margin-top: 0;
+}
+.update-img-container {
+	pointer-events: none;
+}
+.gallery-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: row;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	list-style: none;
+	gap: 0.25rem;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+.gallery-list__item {
+	width: 100%;
+	margin: 0;
+	padding: 8px 6px 21px;
+	background-color: #fff;
+	display: grid;
+	position: relative;
+}
+.gallery-list__item > img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	box-shadow: 0 0 1px #000;
+	pointer-events: none;
+}
+.team-card {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.team-card p {
+	margin: 0;
+	line-height: 1.5rem;
+}
+.team-icon {
+	width: 20%;
+	margin: 0 10px 0 0;
+	padding: 8px 6px 15px;
+	background-color: #fff;
+	position: relative;
+	float: left;
+}
+.team-icon > img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	box-shadow: 0 0 1px #000;
+	cursor: url(../img/cursor.png), auto;
+}
+.store-section {
+	width: 100%;
+	max-width: 30rem;
+}
+.store-container {
+	width: 100%;
+	max-width: 30rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1.25em;
+	align-items: center;
+	justify-content: center;
+}
+.store-container__btn {
+	max-height: 2rem;
+	height: 100%;
+	position: relative;
+	flex: 0 0 calc(25% - 15px);
+	background-color: rgb(0 0 0 / 1);
+	box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
+	cursor: url(../img/cursor.png), auto;
+	border-style: none;
+}
+.store-container__btn--text {
+	padding: 0.5em;
+	color: rgb(255 255 255 / 1);
+	font-family: "Omori";
+	font-size: 1rem;
+	text-decoration: none;
+}
+.store-container__btn img {
+	max-height: 2rem;
+	width: 100%;
+	min-width: 70%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0.5rem;
+	display: block;
+	position: relative;
+	bottom: 0px;
+	object-fit: contain;
+	image-rendering: auto;
+}
+.store-container__btn a {
+	cursor: url(../img/cursor.png), auto;
+	text-decoration: none;
+	color: #fff;
+}
+footer {
+	height: auto;
+	width: 100%;
+	max-width: 30rem;
+	display: flex;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+.door * {
+	display: block;
+	align-items: flex-start;
+	cursor: url(../img/cursor.png), auto;
+}
+.footer-info {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.social-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: right;
+	gap: 0.2rem;
+}
+.social-container__btn * {
+	cursor: url(../img/cursor.png), auto;
+}
+.nav-bar__btn:active,
+.nav-bar__btn:focus {
+	top: -5px;
+}
+.hide {
+	display: none;
+}
