@@ -278,6 +278,7 @@ h3 {
 	position: relative;
 	bottom: 0px;
 	object-fit: contain;
+	image-rendering: auto;
 }
 .store-container__btn a {
 	cursor: url(../img/cursor.png), auto;
@@ -312,6 +313,9 @@ footer {
 	align-items: flex-end;
 	justify-content: right;
 	gap: 0.2rem;
+}
+.social-container img {
+	image-rendering: crisp-edges;
 }
 .social-container__btn * {
 	cursor: url(../img/cursor.png), auto;
