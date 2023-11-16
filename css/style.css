@@ -14,7 +14,7 @@ img {
 	image-rendering: crisp-edges;
 }
 body {
-	height: 100vh;
+	height: 100svh;
 	width: 100vw;
 	margin: 0;
 	font-family: "Omori", "Segoe UI", system-ui, sans-serif;
