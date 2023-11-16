@@ -278,7 +278,6 @@ h3 {
 	position: relative;
 	bottom: 0px;
 	object-fit: contain;
-	image-rendering: auto;
 }
 .store-container__btn a {
 	cursor: url(../img/cursor.png), auto;
