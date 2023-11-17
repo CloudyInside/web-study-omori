@@ -314,9 +314,6 @@ footer {
 	justify-content: right;
 	gap: 0.2rem;
 }
-.social-container img {
-	image-rendering: crisp-edges;
-}
 .social-container__btn * {
 	cursor: url(../img/cursor.png), auto;
 }
